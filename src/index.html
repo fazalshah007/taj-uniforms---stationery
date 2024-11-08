@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Taj Uniform & Stationery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: "Nunito", sans-serif;
+            font-style: normal;
+            /* font-size: 5rem; */
+        }
+
+        .blockMenu {
+            transform: translate(0%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="">
+
+        <!-- navbar section start -->
+        <div class="container flex justify-between p-3 text-xl">
+            <div class="z-20 md:hidden" onclick="hamburger()"><i class="fa-solid fa-bars-staggered"></i></div>
+            <div class="w-12"><img class="mix-blend-darken" src="images/logo.png" alt=""></div>
+
+            <div class="hidden md:block space-x-5">
+                <a class="hover:text-zinc-500" href="#">Home</a>
+                <a class="hover:text-zinc-500" href="#">Products</a>
+                <a class="hover:text-zinc-500" href="#">Blogs</a>
+                <a class="hover:text-zinc-500" href="#">Contact us</a>
+                <a class="hover:text-zinc-500" href="#">About Us</a>
+            </div>
+            <div><i class="fa-solid fa-cart-shopping relative"></i></div>
+            <div id="menu"
+                class="absolute top-0 left-0 z-10 bg-zinc-800 w-full h-screen transition-all translate-x-full">
+                <ul class="list-none flex flex-col justify-center h-screen items-center">
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">Home</a></li>
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">Products</a></li>
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">Blogs</a></li>
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">Contact us</a></li>
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar section end -->
+        <!-- slider section start  -->
+        <div class="w-full aspect-[4/3] md:aspect-video">
+            <div id="slide" class="flex w-screen aspect-[4/3] md:aspect-video transition-all duration-700">
+                <img class="min-w-full object-cover object-center" src="images/3867026.jpg" alt="" srcset="">
+                <img class="min-w-full object-cover object-center" src="images/bg1.jpeg" alt="" srcset="">
+                <img class="min-w-full object-cover object-center" src="images/9742750.jpg" alt="" srcset="">
+                <img class="min-w-full object-cover object-center" src="images/bg2.jpeg" alt="" srcset="">
+            </div>
+        </div>
+
+        <!-- slider section end  -->
+        <!-- category section start  -->
+        <h1 class="text-4xl mt-5 mb-10 font-bold text-center text-zinc-700">Categories</h1>
+
+        <div class="p-3 grid grid-cols-1 md:grid-cols-2 place-items-center gap-10">
+            <div class="aspect-video bg-slate-500 relative group">
+                <img class="" src="https://shop.ourstore.in/wp-content/uploads/2021/08/Banner_img_3-1.jpg" alt="">
+                <div class="absolute top-0 left-0 flex flex-col items-center justify-center bg-zinc-600 size-full text-center text-white opacity-0 group-hover:opacity-100 transition-all">
+                <h1 class="text-2xl font-bold">For Mens</h1>
+                <a class="w-32 p-2 hover:bg-white hover:text-zinc-700 transition-all" href="#">Show</a>
+                 </div>
+            </div>
+            <div class="aspect-video bg-slate-500 relative group">
+                <img class="" src="https://rlv.zcache.com/svc/getimage?id=688d5b61-2749-4f5f-ab0b-29f12f0ebe2e&max_dim=767&image_type=webp" alt="">
+                <div class="absolute top-0 left-0 flex flex-col items-center justify-center bg-zinc-600 size-full text-center text-white opacity-0 group-hover:opacity-100 transition-all">
+                <h1 class="text-2xl font-bold">For women</h1>
+                <a class="w-32 p-2 hover:bg-white hover:text-zinc-700 transition-all" href="#">Show</a>
+                 </div>
+            </div>
+          
+            
+        </div>
+
+        <!-- category section end  -->
+
+        <!-- products section start  -->
+         <h1 class="text-4xl mt-5 mb-10 font-bold text-center text-zinc-700">All Products</h1>
+
+        <div id="productList" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 p-3">
+<!-- --------------------------------------------  -->
+            <!-- <div class="border border-zinc-300 rounded-md overflow-hidden p-2">
+                <div class="aspect-square">
+                    <img class="w-full h-full object-cover object-center" src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="">
+                </div>
+                <div class="mt-5">
+                    <div class="flex justify-between">
+                        <h1 class="font-semibold text-lg">Basic Tea</h1>
+                        <h1 class="font-bold">$35</h1>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-slate-600">black</p>
+                        <button class="bg-zinc-500 rounded text-white p-2 hover:bg-transparent hover:text-zinc-700">Add Cart</button>
+                    </div>
+                </div>
+            </div> -->
+ <!-- ****************************************             -->
+
+<!-- ---------------------------------------------- -->
+        
+</div>
+        <!-- products section end  -->
+
+        <!-- subscription section start  -->
+         <section class="mb-5">
+            <h1 class="text-2xl text-center my-10 text-zinc-700 font-semibold uppercase">Sign Up for Newsletter</h1>
+            <div class="flex flex-col md:flex-row md:w-1/2 md:container bg-gray-300 w-80 m-auto">
+                <input class="outline-none  md:w-full border-2 px-3 py-3 border-zinc-500 " placeholder="Enter Your Email" type="text">
+                <a href="#" class="bg-zinc-800 hover:border-2 hover:bg-white hover:text-zinc-800 transition-all border-[transparent] font-semibold border-2 hover:border-zinc-800 text-white p-3 text-center uppercase " >Subscribe</a>
+            </div>
+
+         </section>
+        <!-- subscription section end  -->
+
+        <!-- footer section start  -->
+
+        <footer class="bg-zinc-300 p-5">
+            <div class="w-40 h-38 m-[0_auto] aspect-video">
+                <img class="w-full h-full object-cover object-center mix-blend-darken" src="images/logo.png" alt="" srcset="">
+            </div>
+
+            <div class="grid place-items-center grid-cols-1 md:grid-cols-2 ">
+                <div>
+                    <h1 class="text-2xl text-center font-bold my-5">Contact Us</h1>
+                    <ul class="text-center">
+                        <li><p>Near Shah Faisal Chowk Gulshan-e-behar Road Orangi Town Karachi</p></li>
+                        <li class="my-5"><p><span class="text-lg font-bold uppercase">Cell :</span> +923443080763</p></li>
+                        <li class="my-5"><p><span class="text-lg font-bold uppercase">Email :</span> Rehansartaj1@gmail.com</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-2xl text-center font-bold my-5">Get in touch</h1>
+                    <ul class="flex text-center">
+                        <li>
+                        <a class="text-2xl mx-3" href="https://www.facebook.com/TajUniforms?mibextid=ZbWKwL">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                        <li>
+                        <a class="text-2xl mx-3" href="https://api.whatsapp.com/send?phone=923443080763">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    </li>
+                        <li>
+                        <a class="text-2xl mx-3" href="mailto:Rehansartaj1@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                    </li>
+                        <li>
+                        <a class="text-2xl mx-3" href="tel:923443080763">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            
+        </footer> 
+        <div>
+            <h1 class="text-center font-semibold my-2"><i class="fa-regular fa-copyright"></i> CopyRight Reserved Taj Uniform 2024</h1>
+        </div>
+
+        <!-- footer section end  -->
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Taj Uniforms & Stationery</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: "Nunito", sans-serif;
+            font-style: normal;
+            /* font-size: 5rem; */
+        }
+
+        .blockMenu {
+            transform: translate(0%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- root div -->
+    <div>
+
+        <!-- navbar section start  -->
+        <div class="container flex justify-between p-3 text-xl">
+            <div class="z-20 md:hidden" onclick="hamburger()"><i class="fa-solid fa-bars-staggered"></i></div>
+            <div class="w-12"><img class="mix-blend-darken" src="../images/logo.png" alt=""></div>
+
+            <div class="hidden md:block space-x-5">
+                <a class="hover:text-zinc-500" href="#">Home</a>
+                <a class="hover:text-zinc-500" href="#">Products</a>
+                <a class="hover:text-zinc-500" href="#">Blogs</a>
+                <a class="hover:text-zinc-500" href="#">Contact us</a>
+                <a class="hover:text-zinc-500" href="#">About Us</a>
+            </div>
+            <div><i class="fa-solid fa-cart-shopping relative"></i></div>
+            <div id="menu"
+                class="absolute top-0 left-0 z-10 bg-zinc-800 w-full h-screen transition-all translate-x-full">
+                <ul class="list-none flex flex-col justify-center h-screen items-center">
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">Home</a></li>
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">Products</a></li>
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">Blogs</a></li>
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">Contact us</a></li>
+                    <li class="my-5"><a
+                            class="text-white transition-all hover:text-zinc-800 flex justify-center items-center w-32 h-10 hover:bg-white"
+                            href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar section end  -->
+
+        <!-- products section start -->
+        <div id="products"  class="container w-screen mt-5">
+
+            <!-- start  -->
+
+            
+            <!-- <div class="flex flex-col sm:flex-row ">
+                <div class="img sm:flex-1">
+
+                    <img class="w-full h-full aspect-square object-center m-2 object-cover"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULwMUfGZV-PGMaN-9UEjpZTf5htXW4pY91A&s"
+                        alt="">
+
+
+                </div>
+                <div class="items sm:flex-1">
+                    <h1 class="font-bold text-3xl sm:text-4xl m-5 ">Product Name</h1>
+                    <h1 class=" text-2xl font-semibold  text-zinc-800 mx-5 my-2">Rs: 5566</h1>
+                    <p class=" text-xl mx-5 my-1 text-zinc-600 ">Tags</p>
+                    <button
+                        class="  bg-zinc-600 px-8 sm:px-5 sm:py-3 py-4 mx-5 mt-8 text-white font-bold text-xl pointer hover:bg-white hover:text-zinc-600 hover:border-2 border-2 border-transperant transition-all hover:border-zinc-600">Add
+                        Card</button>
+                    <p class="mt-8 mx-5">For those who appreciate the art of writing and organization, choosing quality
+                        stationery is essential. The best stationery products combine functionality with elegance,
+                        turning everyday tasks into moments of enjoyment. Luxurious pens with smooth ink flow, finely
+                        crafted notebooks with thick, bleed-resistant pages, and versatile planners with organized
+                        layouts allow users to write, plan, and create seamlessly. Premium sticky notes, sleek paper
+                        clips, and leather-bound folders add a touch of sophistication to any desk setup, enhancing
+                        productivity. When stationery is thoughtfully designed, it reflects personal style and boosts
+                        efficiency. Quality stationery elevates every jot, note, and plan—making even simple tasks feel
+                        extraordinary.</p>
+                </div>
+            </div> -->
+
+
+            <!-- end  -->
+
+        </div>
+        <!-- products section end -->
+
+        <!-- footer section start  -->
+
+
+        <footer class="bg-zinc-300 p-5">
+            <div class="w-40 z-10 h-38 m-[0_auto] aspect-video">
+                <img class="w-full h-full object-cover object-center mix-blend-darken" src="../images/logo.png" alt="" srcset="">
+            </div>
+
+            <div class="grid place-items-center grid-cols-1 md:grid-cols-2 ">
+                <div>
+                    <h1 class="text-2xl text-center font-bold my-5">Contact Us</h1>
+                    <ul class="text-center">
+                        <li><p>Near Shah Faisal Chowk Gulshan-e-behar Road Orangi Town Karachi</p></li>
+                        <li class="my-5"><p><span class="text-lg font-bold uppercase">Cell :</span> +923443080763</p></li>
+                        <li class="my-5"><p><span class="text-lg font-bold uppercase">Email :</span> Rehansartaj1@gmail.com</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-2xl text-center font-bold my-5">Get in touch</h1>
+                    <ul class="flex text-center">
+                        <li>
+                        <a class="text-2xl mx-3" href="https://www.facebook.com/TajUniforms?mibextid=ZbWKwL">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                        <li>
+                        <a class="text-2xl mx-3" href="https://api.whatsapp.com/send?phone=923443080763">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    </li>
+                        <li>
+                        <a class="text-2xl mx-3" href="mailto:Rehansartaj1@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                    </li>
+                        <li>
+                        <a class="text-2xl mx-3" href="tel:923443080763">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            
+        </footer> 
+        <div>
+            <h1 class="text-center font-semibold my-2"><i class="fa-regular fa-copyright"></i> CopyRight Reserved Taj Uniform 2024</h1>
+        </div>
+
+
+        <!-- footer section end  -->
+
+    </div>
+</body>
+<!-- <script src="../app.js"></script> -->
+<script src="main.js"></script>
+
+</html>
